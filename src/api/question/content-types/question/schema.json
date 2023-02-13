@@ -35,6 +35,11 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"
+    },
+    "published": {
+      "type": "boolean",
+      "default": true,
+      "required": true
     }
   }
 }
