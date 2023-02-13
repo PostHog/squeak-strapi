@@ -1,0 +1,30 @@
+{
+  "name": "@posthog/squeak-strapi",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Squeak! is a toolkit for fostering a community in-house. It helps make discussions, resources, and solutions more accessible to the right people.",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/strapi": "4.6.1",
+    "@strapi/plugin-users-permissions": "4.6.1",
+    "@strapi/plugin-i18n": "4.6.1",
+    "pg": "8.8.0"
+  },
+  "author": {
+    "name": "PostHog, Inc."
+  },
+  "strapi": {
+    "uuid": "c3f59d92-1d36-45af-b7ea-2a90e92ad545"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
