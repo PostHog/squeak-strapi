@@ -1,0 +1,16 @@
+version: "3.6"
+
+services:
+  postgres:
+    image: postgres:14
+    restart: on-failure
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: squeak
+      POSTGRES_PASSWORD: squeak
+      POSTGRES_DB: default
+volumes:
+  db_data:
