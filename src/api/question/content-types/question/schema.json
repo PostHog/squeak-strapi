@@ -36,10 +36,11 @@
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"
     },
-    "published": {
-      "type": "boolean",
-      "default": true,
-      "required": true
+    "topics": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::topic.topic",
+      "inversedBy": "questions"
     }
   }
 }
