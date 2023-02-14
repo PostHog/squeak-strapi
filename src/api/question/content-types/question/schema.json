@@ -41,6 +41,12 @@
       "relation": "manyToMany",
       "target": "api::topic.topic",
       "inversedBy": "questions"
+    },
+    "replies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::reply.reply",
+      "mappedBy": "question"
     }
   }
 }
