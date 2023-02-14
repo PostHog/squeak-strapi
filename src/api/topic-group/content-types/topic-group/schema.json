@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "topic_groups",
+  "info": {
+    "singularName": "topic-group",
+    "pluralName": "topic-groups",
+    "displayName": "Topic Group",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "topics": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::topic.topic"
+    }
+  }
+}
