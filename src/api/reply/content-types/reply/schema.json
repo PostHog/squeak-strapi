@@ -20,6 +20,12 @@
       "relation": "manyToOne",
       "target": "api::question.question",
       "inversedBy": "replies"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "replies"
     }
   }
 }
