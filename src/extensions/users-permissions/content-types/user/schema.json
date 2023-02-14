@@ -68,6 +68,12 @@
       "relation": "oneToMany",
       "target": "api::reply.reply",
       "mappedBy": "user"
+    },
+    "questions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::question.question",
+      "mappedBy": "user"
     }
   }
 }
