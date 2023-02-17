@@ -4,7 +4,8 @@
   "info": {
     "singularName": "team",
     "pluralName": "teams",
-    "displayName": "Team"
+    "displayName": "Team",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,10 +15,10 @@
     "name": {
       "type": "string"
     },
-    "members": {
+    "profiles": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "plugin::users-permissions.user"
+      "target": "api::profile.profile"
     },
     "roadmaps": {
       "type": "relation",

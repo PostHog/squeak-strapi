@@ -63,16 +63,10 @@
       "inversedBy": "users",
       "configurable": false
     },
-    "replies": {
+    "profile": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::reply.reply",
-      "mappedBy": "user"
-    },
-    "questions": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::question.question",
+      "relation": "oneToOne",
+      "target": "api::profile.profile",
       "mappedBy": "user"
     }
   }

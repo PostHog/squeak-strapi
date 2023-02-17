@@ -21,10 +21,10 @@
       "target": "api::question.question",
       "inversedBy": "replies"
     },
-    "user": {
+    "profile": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "plugin::users-permissions.user",
+      "target": "api::profile.profile",
       "inversedBy": "replies"
     }
   }

@@ -31,10 +31,10 @@
       "type": "richtext",
       "required": true
     },
-    "user": {
+    "profile": {
       "type": "relation",
       "relation": "manyToOne",
-      "target": "plugin::users-permissions.user",
+      "target": "api::profile.profile",
       "inversedBy": "questions"
     },
     "topics": {
